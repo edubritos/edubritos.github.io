@@ -1,0 +1,286 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #333;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+}
+
+li a:hover, #services div .projeto div p a:hover{
+    border-bottom: tomato solid 2px;
+    transition:  all 0.5s ease;
+    color: tomato;
+    border-radius: 7px;
+    
+}
+
+/* *************************** Menu */
+header{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #333;
+    margin: auto;
+}
+
+header #name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    border-left: #fff solid 2px;
+    text-align: center;
+    margin-left: 6%;
+ 
+}
+header #name h2, #name p{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+header #name h2{
+    margin-left: 10px;
+
+}
+
+header #name p{
+    color: tomato;
+    padding-top: 10px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+header nav ul{
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    list-style: none;
+
+}
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    text-transform: uppercase;
+    border:#333 solid 2px;
+    
+}
+
+
+/* ******************* Skils */
+content{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+content .perfil{
+    border-radius: 100%;
+    margin: 10px auto;
+    
+}
+
+content #skils{
+    width: 40%;
+    text-align: justify;
+    margin-right: 10%;
+    font-size: 24px;
+    
+}
+content #tech{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/*********************** Serviços */
+#services{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    background-color: #444;
+    border-radius: 7px;
+}
+
+#services div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+#services div .projeto {
+    margin-top: 20px;
+
+}
+#services div .projeto div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#services div .projeto div .imgmobile{
+    margin: 5% 55px;
+    border-radius: 7px;
+}
+
+#services div .projeto div .imgproj{
+    margin: 10% auto;
+    border-radius: 7px;
+    border: 1px solid #222;
+}
+
+#services div .projeto div p{
+    width: 40%;
+    margin-left: 30px;
+}
+
+#services div div ul, 
+#services div div ul a, 
+#contact div ul,
+#contact div ul a{
+    display: flex;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;    
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* *********************** Contato */
+#contact{
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    border-radius: 7px;
+}
+#contact div{
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact form{
+    height: 300px;
+    width: 40%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: #222 solid 2px;
+    border-radius: 7px;
+    background-color: #444;
+}
+#contact div ul{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+#contact form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+#contact form textarea, #contact form button{
+    border-radius: 7px;
+    width: 100%;
+}
+#contact form button{
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    border: #222 solid 2px;
+}
+#contact .contacticons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 150px;
+    margin-top: 100px;
+
+}
+#contact .contacticons a{
+    margin-left: 10px;
+}
+footer{
+    width: 80vw;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #333;
+}
+
+/* ******************************************* Media */
+@media only screen and (max-width: 800px){
+    header{
+        height: auto;
+        justify-content: left;
+    }
+    header #name{
+        margin: auto;
+    }
+    header nav ul{
+        font-size: 20px;
+        margin: 0;
+        justify-content: left;
+    }
+    content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    content .perfil{
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+    content #skils{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    #contact form{
+        width: 80%;
+    }
+    #services div .projeto div p{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+}
