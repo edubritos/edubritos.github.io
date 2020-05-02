@@ -84,7 +84,7 @@ header nav ul li a{
 /* ******************* Skils */
 content{
     width: 80vw;
-    height: 80vh;
+    height:auto;
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -110,6 +110,7 @@ content #tech{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 10px auto;
 }
 
 
@@ -174,7 +175,7 @@ content #tech{
 /* *********************** Contato */
 #contact{
     width: 80vw;
-    height: 90vh;
+    height: auto;
     margin: auto;
     border-radius: 7px;
 }
@@ -191,7 +192,8 @@ content #tech{
     height: 300px;
     width: 40%;
     padding: 20px;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -229,19 +231,22 @@ content #tech{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0 auto;
     width: 150px;
-    margin-top: 100px;
+    top: 0;
 
 }
 #contact .contacticons a{
     margin-left: 10px;
 }
+
 footer{
     width: 80vw;
-    margin: 0px auto;
+    margin: auto;
+    margin-top: 100px;
     text-align: center;
     background-color: #333;
+    bottom: 0px;
 }
 
 /* ******************************************* Media */
